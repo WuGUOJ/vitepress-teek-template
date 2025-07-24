@@ -5,13 +5,13 @@ import { MermaidMarkdown } from "vitepress-plugin-mermaid";
 
 
 export const teekConfig = defineTeekConfig({
-  author: { name: "Teeker", link: "https://github.com/Kele-Bingtang" },
+  author: { name: "WuGUOJ", link: "https://github.com/WuGUOJ" },
   pageStyle: "segment-nav",
   blogger: {
-    avatar: "https://testingcf.jsdelivr.net/gh/Kele-Bingtang/static/user/avatar1.png",
+    avatar: "https://avatars.githubusercontent.com/u/34879913?v=4",
     shape: "circle-rotate",
-    name: "天客",
-    slogan: "朝圣的使徒，正在走向编程的至高殿堂！",
+    name: "WGJ",
+    slogan: "改变能改变的，接收不能改变的！",
     circleBgImg: "/blog/bg4.webp",
     color: "#ffffff",
   },
@@ -94,7 +94,7 @@ export const teekConfig = defineTeekConfig({
     },
     copyright: {
       createYear: 2024,
-      suffix: "Teek",
+      suffix: "WGJ",
     },
     icpRecord: {
       name: '粤ICP备xxxxxx号-1',

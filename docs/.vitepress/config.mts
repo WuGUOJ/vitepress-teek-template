@@ -6,9 +6,9 @@ import { teekConfig } from "./teekConfig";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: teekConfig,
-  base: '/vitepress-teek-template/',
+  base: '/vitepress-teek-template/',  // 部署到 github pages
   title: "Vitepress-teek-template",
-  description: "基于vitepress-theme-teek主题的模板",
+  description: "基于 vitepress-theme-teek 主题的基础模板，可基于此快速构建文档。",
   lastUpdated: true,
   lang: "zh-CN",
   head: [
