@@ -19,10 +19,10 @@ pnpm install
 ```
 ### 运行
 ```
-pnpm run dev
+pnpm docs:dev
 ```
 
 ### 打包
 ```
-pnpm run build
+pnpm docs:build
 ```
