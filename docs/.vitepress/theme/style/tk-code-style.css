@@ -1,0 +1,10 @@
+/* .vitepress/theme/style/tk-code-style.css */
+:root {
+  /*
+   * none：文本中的单词保持默认风格
+   * capitalize：文本中的每个单词以大写字母开头
+   * lowercase：文本中的每个单词全部转为小写
+   * uppercase：定文本中的单次全部转为大写
+   */
+  --tk-code-block-lang-transform: capitalize;
+}
