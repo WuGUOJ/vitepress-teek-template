@@ -6,7 +6,7 @@ import { teekConfig } from "./teekConfig";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: teekConfig,
-
+  base: '/vitepress-teek-template/',
   title: "Vitepress-teek-template",
   description: "基于vitepress-theme-teek主题的模板",
   lastUpdated: true,
