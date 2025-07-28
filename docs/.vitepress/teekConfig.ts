@@ -11,7 +11,7 @@ export const teekConfig = defineTeekConfig({
     avatar: "https://avatars.githubusercontent.com/u/34879913?v=4",
     shape: "circle-rotate",
     name: "WGJ",
-    slogan: "改变能改变的，接收不能改变的！",
+    slogan: "改变能改变的，接受不能改变的！",
     circleBgImg: "/blog/bg4.webp",
     color: "#ffffff",
   },
