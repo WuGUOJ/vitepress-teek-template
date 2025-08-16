@@ -27,14 +27,14 @@ export default defineConfig({
     },
     nav: [
       {
-        text: "案例",
+        text: "💎案例",
         items: [
           { text: 'PlantUML', link: '/examples/plantuml' },
           { text: 'Mermaid', link: '/pages/da099f' },
         ]
       },
       {
-        text: "文章索引",
+        text: "📚文章索引",
         items: [
           { text: "归档", link: "/archives" },
           // { text: "清单", link: "/articleOverview" },

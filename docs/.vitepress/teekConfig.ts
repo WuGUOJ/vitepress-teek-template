@@ -5,6 +5,16 @@ import { MermaidMarkdown } from "vitepress-plugin-mermaid";
 
 
 export const teekConfig = defineTeekConfig({
+  themeEnhance: {
+    layoutSwitch: {
+      defaultMode: "fullWidth",
+      disabled: true,
+    },
+    // 布局主题色配置
+    themeColor: {
+      disabled: true
+    },
+  },
   author: { name: "WuGUOJ", link: "https://github.com/WuGUOJ" },
   pageStyle: "segment-nav",
   blogger: {
@@ -31,6 +41,9 @@ export const teekConfig = defineTeekConfig({
     ],
     descStyle: "types",
   },
+  page: {
+    pageSize: 20
+  },
   // 背景图片配置
   bodyBgImg: {},
   vitePlugins: {
@@ -45,6 +58,7 @@ export const teekConfig = defineTeekConfig({
       initItems: false,
       collapsed: true,  // 是否折叠
       ignoreList: ["imgs"],
+      sort: false,
     },
   },
   breadcrumb: {
@@ -55,8 +69,19 @@ export const teekConfig = defineTeekConfig({
   docAnalysis: {
     createTime: "2025-07-24",
     statistics: {
-      provider: "busuanzi",
+      provider: "vercount",
+      tryRequest: true,
+      tryCount: 3,
+      tryIterationTime: 1000,
     },
+    overrideInfo: [
+      {
+        key: "lastActiveTime",
+        label: "活跃时间",
+        value: (_, currentValue) => (currentValue + "").replace("前", ""),
+        show: true,
+      },
+    ],
   },
   // https://teek.tianke99.cn/reference/article-config.html#articleanalyze
   articleAnalyze: {
@@ -68,12 +93,11 @@ export const teekConfig = defineTeekConfig({
     showUpdateDate: true, // 是否展示更新日期，仅在文章页显示
     showCategory: false, // 是否展示分类
     showTag: false, // 是否展示标签
-    // 有问题：第一次不显示，刷新后显示。
-    // teleport: {
-    //   selector: "h1",
-    //   position: "after",
-    //   className: "h1-bottom-info",
-    // },
+    teleport: {
+      selector: "h1",
+      position: "after",
+      className: "h1-bottom-info",
+    },
   },
   // 精选文章
   topArticle: {
